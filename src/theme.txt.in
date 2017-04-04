@@ -1,0 +1,63 @@
+desktop-image: "@BACKGROUND_IMAGE@"
+terminal-box: "@TERMINAL_BOX_PREFIX@_*.png"
+terminal-font: "@TERMINAL_FONT@"
+title-text: ""
+
++ boot_menu {
+    left = 50%
+    top = 25%
+    width = 40%
+    height = 50%	
+
+    item_font = "@BOOT_MENU_FONT@"
+    item_color = "#eeeeee"
+    item_height = 32
+    item_icon_space = 16
+    item_spacing = 16
+    item_padding = 24
+
+    selected_item_font = "@SELECT_FONT@"
+    selected_item_color= "#2f2f2f"
+    selected_item_pixmap_style = "@SELECT_PREFIX@_*.png"
+
+    icon_height = 24
+    icon_width = 24
+
+    scrollbar = false
+
+    menu_pixmap_style = "@BOOT_MENU_PREFIX@_*.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+
+    left = 0
+    top = 0
+    width = 100%
+    height = 25
+
+    bar_style = "@PROGRESS_BAR_PREFIX@_*.png"
+    highlight_style = "@PROGRESS_HIGHLIGHT_PREFIX@_*.png"
+}
+
++ image {
+    left = 25%-300
+    top = 45%-81
+    width = 600
+    height = 192
+
+    file = "@LOGO_IMAGE@"
+}
+
++ label {
+    left = 0
+    top = 100%-30
+    width = 95%
+    height = 25
+
+    align = right
+    color = "#eeeeee"
+    font = "@LABEL_FONT@"
+
+    text = "@KEYMAP_SHORT@"
+}

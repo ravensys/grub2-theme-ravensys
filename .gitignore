@@ -1,0 +1,30 @@
+#build objects
+background.png
+icons
+icons/*
+logo.png
+menu_*.png
+progress_bar_*.png
+progress_highlight_*.png
+scrollbar_*.png
+select_*.png
+scrollbar_*.png
+terminal_box_*.png
+theme.txt
+DejaVu-Sans-*.pf2
+Unifont-*.pf2
+
+# obj directory
+obj
+
+# dist archives
+grub2-theme-ravensys.tar.gz
+grub2-theme-ravensys.tar.xz
+
+# release archives
+grub2-theme-ravensys-*.tar.gz
+grub2-theme-ravensys-*.tar.xz
+
+# open build service
+build-service
+
