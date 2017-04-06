@@ -208,7 +208,7 @@ $(theme-file): theme.txt.in
 		"$<" > "$@"
 
 $(background-file): texture.png
-	convert "$<" -crop "$(WIDTH)x$(HEIGHT)+0+0" png32:"$@"
+	convert "$<" -gravity center -crop "$(WIDTH)x$(HEIGHT)+0+0" png32:"$@"
 
 .PHONY: $(boot-menu-filename)
 $(boot-menu-filename): $(boot-menu-files)
