@@ -113,7 +113,9 @@ terminal-font-weight = Regular
 
 dist-filename = grub2-theme-$(THEMENAME)
 dist-files += $(addprefix $(srcdir)/, $(source-files))
+dist-files += Attribution
 dist-files += CC-BY-SA-4.0
+dist-files += LICENSE
 dist-files += Makefile
 #TODO create README file
 #dist-files += README.md
@@ -130,6 +132,7 @@ release-files += $(scrollbar-files)
 release-files += $(select-files)
 release-files += $(terminal-box-files)
 release-files += $(theme-file)
+release-files += Attribution
 release-files += CC-BY-SA-4.0
 release-archive = $(release-filename).tar.gz $(release-filename).tar.xz
 
