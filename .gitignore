@@ -11,19 +11,19 @@
 #
 # Distribution archives (make dist)
 #
-grub2-theme-ravensys.tar.gz
-grub2-theme-ravensys.tar.xz
+/grub2-theme-ravensys.tar.gz
+/grub2-theme-ravensys.tar.xz
 
 #
 # Release archives (make release)
 #
-grub2-theme-ravensys-*.tar.gz
-grub2-theme-ravensys-*.tar.xz
+/grub2-theme-ravensys-*.tar.gz
+/grub2-theme-ravensys-*.tar.xz
 
 #
 # openSUSE Build Service
 #
-build-service/
+/build-service/
 
 #
 # IntelliJ IDEA Project files
