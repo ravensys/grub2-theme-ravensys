@@ -1,6 +1,3 @@
-srcdir = src
-VPATH = $(srcdir)
-
 THEMENAME = ravensys
 THEMEDESC = RavenSys theme for GRUB2
 VERSION = $(shell date '+%Y%m%d')
@@ -24,19 +21,8 @@ ICONS += tails
 ICONS += utilities
 ICONS += windows
 
-OBJDIR = obj
-
 theme-dir = /boot/grub2/themes/$(THEMENAME)
 theme-file = theme.txt
-
-source-files += logo.svgz
-source-files += texture.png
-source-files += theme.txt.in
-source-files += font/$(boot-menu-font-name)-$(boot-menu-font-weight).ttf
-source-files += font/$(label-font-name)-$(label-font-weight).ttf
-source-files += font/$(select-font-name)-$(select-font-weight).ttf
-source-files += font/$(terminal-font-name)-$(terminal-font-weight))).ttf
-source-files += $(addprefix icon/,$(addsuffix .png,$(ICONS)))
 
 background-file = background.png
 
@@ -135,6 +121,20 @@ release-files += $(theme-file)
 release-files += Attribution
 release-files += CC-BY-SA-4.0
 release-archive = $(release-filename).tar.gz $(release-filename).tar.xz
+
+srcdir = src
+
+source-files += logo.svgz
+source-files += texture.png
+source-files += theme.txt.in
+source-files += font/$(boot-menu-font-name)-$(boot-menu-font-weight).ttf
+source-files += font/$(label-font-name)-$(label-font-weight).ttf
+source-files += font/$(select-font-name)-$(select-font-weight).ttf
+source-files += font/$(terminal-font-name)-$(terminal-font-weight).ttf
+source-files += $(addprefix icon/,$(addsuffix .png,$(ICONS)))
+
+OBJDIR = obj
+VPATH = $(srcdir)
 
 .PHONY: all
 all: $(background-file) $(boot-menu-filename) $(font-files) $(icon-files) $(logo-file) $(progress-filename) $(scrollbar-filename) $(select-filename) $(terminal-box-filename) $(theme-file)
