@@ -1,30 +1,32 @@
-#build objects
-background.png
-icons
-icons/*
-logo.png
-menu_*.png
-progress_bar_*.png
-progress_highlight_*.png
-scrollbar_*.png
-select_*.png
-scrollbar_*.png
-terminal_box_*.png
-theme.txt
-DejaVu-Sans-*.pf2
-Unifont-*.pf2
+#
+# Build objects and directories
+#
+/icons/
+/obj/
+/theme.txt
+/*.pf2
+/*.png
 
-# obj directory
-obj
 
-# dist archives
+#
+# Distribution archives (make dist)
+#
 grub2-theme-ravensys.tar.gz
 grub2-theme-ravensys.tar.xz
 
-# release archives
+#
+# Release archives (make release)
+#
 grub2-theme-ravensys-*.tar.gz
 grub2-theme-ravensys-*.tar.xz
 
-# open build service
-build-service
+#
+# openSUSE Build Service
+#
+build-service/
 
+#
+# IntelliJ IDEA Project files
+#
+.idea/
+*.iml
